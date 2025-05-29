@@ -13,3 +13,9 @@ bird_flight(Bird) :-
 bird_flight(Bird) :-
     cannot_fly(Bird),
     format('~w cannot fly.~n', [Bird]).
+
+% output:
+?- bird_flight(sparrow).
+sparrow can fly.
+?- bird_flight(penguin).
+penguin cannot fly.
