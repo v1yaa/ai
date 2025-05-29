@@ -15,3 +15,12 @@ P = jupiter ;
 P = saturn ;
 P = uranus ;
 P = neptune.
+
+?- has_atmosphere(P).
+P = venus ;
+P = earth ;
+P = mars ;
+P = jupiter ;
+P = saturn ;
+P = uranus ;
+P = neptune.
