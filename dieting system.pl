@@ -11,3 +11,9 @@ diet(obesity, cucumber).
 diet(obesity, lentils).
 suggest_diet(Disease, Food) :- diet(Disease, Food).
 all_diets(Disease, List) :- findall(Food, diet(Disease, Food), List).
+
+% output:
+?- suggest_diet(sugar, X).
+X = oats ;
+X = leafy_greens ;
+X = nuts.
