@@ -8,3 +8,10 @@ planet(uranus, 27, yes).
 planet(neptune, 14, yes).
 has_atmosphere(P) :- planet(P, _, yes).
 many_moons(P, N) :- planet(P, M, _), M > N.
+
+% output:
+?- many_moons(P, 10).
+P = jupiter ;
+P = saturn ;
+P = uranus ;
+P = neptune.
