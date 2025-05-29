@@ -11,3 +11,9 @@ student_teacher(Student, Teacher) :-
 student_code(Student, Code) :-
     student(Student, Subject),
     teacher(_, Subject, Code).
+
+% output:
+?- student_teacher(john, T).
+T = smith.
+?- student_code(alice, C).
+C = p102.
