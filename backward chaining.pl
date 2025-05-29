@@ -16,3 +16,12 @@ prove(X) :- rule(X, Conditions), prove_all(Conditions).
 % Prove all elements in a list
 prove_all([]).
 prove_all([H|T]) :- prove(H), prove_all(T).
+
+?- prove(can_go_to_beach).
+true.
+
+?- prove(is_happy).
+true.
+
+?- prove(has_umbrella).
+false.
