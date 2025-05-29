@@ -31,3 +31,12 @@ list_all_facts :-
     write('- '), write(X), nl,
     fail.
 list_all_facts.
+
+% output:
+?- forward_chaining.
+Inferred facts: 
+- a
+- b
+- c
+- d
+- e
