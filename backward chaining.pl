@@ -17,6 +17,7 @@ prove(X) :- rule(X, Conditions), prove_all(Conditions).
 prove_all([]).
 prove_all([H|T]) :- prove(H), prove_all(T).
 
+% output:
 ?- prove(can_go_to_beach).
 true.
 
