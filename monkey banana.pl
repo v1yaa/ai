@@ -20,3 +20,6 @@ solve_problem(ActionList) :-
     initial_state(InitialState),
     execute_actions(InitialState, ActionList, FinalState),
     final_state(FinalState).
+
+?- solve_problem(ActionList).
+ActionList = [climb, grasp, climb, walk, grasp, walk].
