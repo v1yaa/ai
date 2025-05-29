@@ -39,3 +39,7 @@ sort_paths(Paths, Sorted) :-
 
 % Get heuristic of the first node in a path
 get_hval([Node|_], H) :- heuristic(Node, H).
+
+% output:
+?- best_first(a, goal, Path).
+Path = [a, c, e, goal].
